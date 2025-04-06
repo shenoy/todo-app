@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript/JavaScript build output
+dist/
+*.js
+*.js.map
+
+# Environment variables
+.env
+.env.local
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
