@@ -4,10 +4,15 @@
   "description": "Simple TypeScript To-Do App",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "tsc && cp src/index.html src/style.css dist/",
+    "watch": "tsc -w",
+    "predeploy": "npm run build",
+    "start": "http-server dist"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
